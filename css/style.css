@@ -1,3 +1,92 @@
 
 
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    color: #333B46;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    color: #81868E;
+}
+
+/*header start*/
+
+header .navbar-brand{
+    font-family: 'Leckerli One', cursive;
+    color: #E84C3D !important;
+    font-size: 2rem;
+}
+
+.active{
+    font-weight: bold;
+}
+
+#main-menu ul li{
+    color: #333B46 !important; 
+    text-transform: uppercase;
+    
+}
+
+.navbar-light .navbar-toggler {
+    
+    border-color: #E84C3D;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba()' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#main-menu .nav-link{
+    border-bottom: 1px solid #81868E;
+}
+
+#main-menu .nav-link:hover{
+    background-color: #E84C3D; 
+    color: #fff;
+}
+
+
+/*header ends*/
+
+/*section herro start*/
+.herro{
+   padding: 150px 0;
+   
+   background-position: center center; 
+   background-size: cover;
+}
+
+.herro h2{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #333B46;
+}
+
+.herro h4{
+    color: #81868E;
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+/*section herro ends*/
+
+/*section herro start*/
+
+/*sectionherro end*/
 

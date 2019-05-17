@@ -1,112 +1,294 @@
 
+/*
+    font-family: 'Leckerli One', cursive;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;*/
+
+
+
 
 html{
     font-size: 14px;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Roboto', sans-serif;
-    color: #333B46;
-}
 
 img{
     max-width: 100%;
 }
 
-p{
-    color: #81868E;
+body{
+    color:#81868e;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
-.line{
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+.dash:after{
     content: '';
     display: block;
     width: 50px;
     height: 2px;
-    border-bottom: 3px solid #898989;
+    background: #999;
+    margin-top: 15px;
+}
+.dash.text-center:after{
+    margin: 15px auto 0;
+}
+.dash-white:after{
+    background: #fff;
 }
 
-/*header start*/
+/*HEADER */
 
-header .navbar-brand{
+
+header{
+    transition: 0.5s linear;
+}
+
+.header-active{
+    background: rgba(255,255,255,1);
+}
+
+
+.navbar-brand{
     font-family: 'Leckerli One', cursive;
-    color: #E84C3D !important;
     font-size: 2rem;
-}
-
-.active{
-    font-weight: bold;
-}
-
-#main-menu ul li{
-    color: #333B46 !important; 
+    color: #E84C3D !important;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    
 }
 
-.navbar-light .navbar-toggler {
-    
-    border-color: #E84C3D;
+.navbar-light .navbar-toggler{
+    border-color: #E84C3D !important;
+    overflow: hidden;
+}
+
+.navbar-light .navbar-toggler:hover{
+    background-color: #E84C3D !important;
 }
 .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba()' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232, 76, 61, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#main-menu .nav-link{
-    border-bottom: 1px solid #81868E;
+.navbar-light .navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#main-menu .nav-link:hover{
-    background-color: #E84C3D; 
+.navbar-toggler span{
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: #E84C3D;
+    margin: 5px 0;
+    position: relative;
+    transition: 0.5s linear;
+}
+
+.navbar-toggler:hover span{
+    background: #fff;
+}
+
+.navbar-toggler.active span:nth-of-type(2){
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.navbar-toggler.active span:nth-of-type(1){
+    transform: rotate(45deg) translate(5px , 6px);
+}
+
+.navbar-toggler.active span:nth-of-type(3){
+    transform: rotate(-45deg) translate(5px , -6px);
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    text-transform: uppercase;
+    color:#333b46;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    transition: 0.5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active
+{
+    background: #E84C3D;
     color: #fff;
 }
 
-
-/*header ends*/
-
-/*section herro start*/
-.herro{
-   padding: 150px 0;
-   
-   background-position: center center; 
-   background-size: cover;
-}
-
-.herro h2{
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    color: #333B46;
-}
-
-.herro h4{
-    color: #81868E;
-    letter-spacing: 5px;
-    font-size: 1.1rem;
-}
-
-/*section herro ends*/
-
-
-
-
-/*section about-us start*/
-
-.about-us{
-    padding: 100px;
-    background-color: #ECECEC;
+.navbar-nav{
+    background: #fff;
 }
 
 
-.btn-danger{
-    color: #E84C3D;
+/*HELLO*/
+.hello{
+    background-size: cover;
+    background-position: center right;
+}
+.hello article{
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 1%;
+}
+
+.btn-danger, .bg-danger{
+    background-color: #E84C3D !important;
+}
+
+
+/*SERVICE*/
+
+.service-item{
+    border:1px solid #ccc;
     border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.service-item:hover{
+    background: #E84C3D;
+    color:#fff;
+    border:1px solid #E84C3D;
+}
+
+.service-icon .fa{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    line-height: 90px;
+    background: #E84C3D;
+    color: #fff;
+    font-size: 40px;
+    transition: 0.5s ease;
+}
+
+.service-item:hover .service-icon .fa{
+    background: #fff;
+    color:#E84C3D;
+}
+
+
+/*PORTFOLIO*/
+
+.portfolio{
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/*TEAM*/
+
+
+
+.team-member{
+    display: inline-block;
+    max-width: 320px;
+}
+.team-member img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.team-member:hover img{
+    transform: scale(1.1);
 }
 
 
 
+.team-member figure{
+    position: relative;
+    overflow: hidden;
+}
 
-/*section about-us end*/
+.team-member .hover{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #E84C3D;
+    color:#fff;
+    display: none;
+}
+.team-member:hover .hover{
+    display: block;
+}
 
+.team-member .hover .fa{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    border:1px solid #fff;
+    margin: 0 5px;
+    transition: 0.5s ease;
+    font-size: 22px;
+}
+.team-member .hover .fa:hover{
+    transform: rotate(360deg);
+    text-decoration: none;
+}
+
+.team-member h5 a{
+    color: #333b46;
+}
+
+
+.subscribe .form-control{
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+}
+.subscribe form button{
+    border-color: #fff;
+    border-radius: 0;
+    color:#fff;
+    background: transparent;
+}
+
+.subscribe ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.subscribe ::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+.subscribe :-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.subscribe :-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+
+
+.contact-form .form-control{
+    border-radius: 0;
+}
+.form-control:focus{
+    outline: none;
+    box-shadow: 0 0 2px  #ccc;
+    border-color: #ccc;
+    
+}
+
+.contact-form textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contact .fa{
+    width: 40px;
+    text-align: center;
+}
+
+.contact a{
+    color: #81868e;
+}

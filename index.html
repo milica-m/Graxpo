@@ -4,116 +4,449 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content=" milica milic">
-        <meta name="description" content="Bootstrap project">
-        <meta name="keywords" content="html, css, bootstrap, cubes">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+
+        <!--iOS compatibile-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Graxpo">
+        <link rel="apple-touch-icon" href="apple-icon-60x60.png">        
+        
+        
+        <!--Android compatibile-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="aplication-name" content="Graxpo">
+        <link rel="icon" type="icon/png" href="android-icon-48x48.png">        
+        
 
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
-
-
-
-        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans:300,400|Roboto:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
 
 
+        <!--CUSTOM PAGE CSS down-->
+        <link href="css/animation.css" rel="stylesheet" type="text/css"/>
+        <link href="css/form-validation.css" rel="stylesheet" type="text/css"/>
 
 
-        <!--THEME CSS-->  
+        <!--THEME CSS-->
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
 
-        <!--fonts-->
-        <link href="fonts/fonts.css" rel="stylesheet" type="text/css"/>
-
-
-
-        <title>Graxpo</title>
+        <title>GRAXPO</title>
     </head>
-    <body >
+    <body data-spy="scroll" data-target="#main-menu">
 
-        <!--header start-->
-
-        <header class="py-2 py-lg-4 fixed-top">
+        <header class="fixed-top py-lg-4">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <a class="navbar-brand" href="#">
-                        GRAXPO
-                    </a>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#">graxpo</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="main-menu">
-                        <ul class="navbar-nav ml-auto text-center">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#home">home<span class="sr-only">(current)</span></a>
+                        <ul class="navbar-nav ml-md-auto">
+                            <li class="nav-item ">
+                                <!-- Add active class on link -->
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">about</a>
-                            </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#service">service</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">portfolio</a>
+                                <a class="nav-link" href="#service">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#team">team</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#blog">blog</a>
-                            </li>                        
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">contact</a>
+                                <a class="nav-link" href="#team">Team</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
                         </ul>
 
                     </div>
                 </nav>
             </div>
+        </header>
 
-        </header>  <!--header ends-->
+        <main>
 
-        <!--section hello start-->
+            <section class="hello" style="background-image: url('img/lead.jpg')">
+                <div class="container">
+                    <article class="text-center animation" data-animation="zoom">
+                        <h1>HELLO, WE’RE PROTHEMERS</h1>
+                        <h5>FRESH PREMIMIUM QUALITY PSD TEMPLATE</h5>
+                    </article>
+                </div>
+            </section>
 
-        <section class="herro position-relative" style="background-image: url('img/lead.jpg')">
-            <div class="container text-center text-uppercase align-items-center">
-                <h2>
-                    HELLO, WE’RE PROTHEMERS
-                </h2>
-                <h4>FRESH PREMIMIUM QUALITY PSD TEMPLATE</h4>
-            </div>
+            <section class="about py-4 py-lg-5" id="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0 animation" data-animation="slideRight">
+                            <article>
+                                <h4 class="text-uppercase dash">About us</h4>
+                                <p>
+                                    In gnissimos ducimus qui blanditiis praesentium voluptatum
+                                    deleniti atque corrupti quos dolores et quas molestias excepturi
+                                    sint occaecati cupiditate non provident, similique sunt
+                                    in culpa qui officia deserunt mollitia animi, id est
+                                    laborum et dolorum fuga. Et harum quidem rerum facilis
+                                    est et expedita distinctio. 
+                                </p>
 
-        </section>
-
-        <section class="about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 mb-3">
-                        <h5 class="mb-4">ABOUT GRAXPO</h5>
-                        <div class="line mb-5"></div>
-                        <p class="mb-4 text-center text-lg-left">In gnissimos ducimus qui blanditiis praesentium voluptatum 
-                            deleniti atque corrupti quos dolores et quas molestias excepturi 
-                            sint occaecati cupiditate non provident, similique sunt in culpa 
-                            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
-                            Et harum quidem rerum facilis est et expedita distinctio. 
-                        </p>
-                        <div class="btn btn-danger">
-                            <a href="#" class="text-white">LEARN MORE !</a>
+                                <a href="#" class="text-uppercase btn btn-danger">learn more</a>
+                            </article>
+                        </div> 
+                        <div class="col-12 col-md-6 animation" data-animation="slideLeft">
+                            <figure class="text-center">
+                                <img src="img/browser.jpg" alt=""/>                                
+                            </figure>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <img src="img/Browser.jpg" alt=""/>
+                </div>
+            </section>
+
+            <section class="service py-4 py-lg-5" id="service">
+                <div class="container">
+                    <h4 class="text-center text-uppercase dash mb-4 animation" data-animation="slideDown">what we do</h4>
+                    <p class="text-center mb-5 animation" data-animation="slideDown" data-delay="0.5s">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                        been the industry's standard dummy text 
+                    </p>
+
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-4 animation" data-animation="slideUp" data-delay="0.1s">
+                            <article class="service-item p-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+                                        <div class="service-icon text-center">
+                                            <span class="fa fa-desktop"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <div class="service-description">
+                                            <h5 class="text-uppercase  dash">UI / UX DESIGN</h5>
+                                            <p class="">
+                                                Lorem Ipsum is simply dummy text thprinting 
+                                                andthe industry's standard dummy text lorem Ipsum is simply dummy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4 animation" data-animation="slideUp" data-delay="0.4s">
+                            <article class="service-item p-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+                                        <div class="service-icon text-center">
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <div class="service-description">
+                                            <h5 class="text-uppercase  dash">branding & identity</h5>
+                                            <p>
+                                                Lorem Ipsum is simply dummy text thprinting 
+                                                andthe industry's standard dummy text lorem Ipsum is simply dummy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4 animation" data-animation="slideUp" data-delay="0.7s">
+                            <article class="service-item p-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+                                        <div class="service-icon text-center">
+                                            <span class="fa fa-mobile"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <div class="service-description">
+                                            <h5 class="text-uppercase  dash">app design</h5>
+                                            <p>
+                                                Lorem Ipsum is simply dummy text thprinting 
+                                                andthe industry's standard dummy text lorem Ipsum is simply dummy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4 animation" data-animation="slideUp" data-delay="1s">
+                            <article class="service-item p-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+                                        <div class="service-icon text-center">
+                                            <span class="fa fa-pencil-square-o"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <div class="service-description">
+                                            <h5 class="text-uppercase  dash">Print design</h5>
+                                            <p>
+                                                Lorem Ipsum is simply dummy text thprinting 
+                                                andthe industry's standard dummy text lorem Ipsum is simply dummy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div> 
+            </section>
 
-        </section>
+            <section class="portfolio text-white" id="portfolio" style="background-image: linear-gradient(to right, rgba(232,76,61,0.85), rgba(232,76,61,0.85)), url('img/services.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <article class="portfolio-item animation" data-animation="slideUp" data-delay="0.1s">
+                                <h2>
+                                    <span class="fa fa-thumbs-up"></span>
+                                    <span class="counter">1245</span>
+                                </h2>
+                                <h5 class="dash dash-white text-uppercase">project completed</h5>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <article class="portfolio-item animation" data-animation="slideUp" data-delay="0.4s">
+                                <h2>
+                                    <span class="fa fa-heart-o"></span>
+                                    <span class="counter">2400</span>
+                                </h2>
+                                <h5 class="dash dash-white text-uppercase">people loved</h5>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <article class="portfolio-item animation" data-animation="slideUp" data-delay="0.7s">
+                                <h2>
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="counter">1245</span>
+                                </h2>
+                                <h5 class="dash dash-white text-uppercase">identify earn</h5>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <article class="portfolio-item animation" data-animation="slideUp" data-delay="1s">
+                                <h2>
+                                    <span class="fa fa-bullseye"></span>
+                                    <span class="counter">1245</span>
+                                </h2>
+                                <h5 class="dash dash-white text-uppercase">busines donor</h5>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team py-5 text-center" id="team">
+                <div class="container">
+                    <h4 class="text-uppercase dash mb-4 text-center">MEET OUR CREW</h4>
+                    <p class="mb-5">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                        been the industry's standard dummy text 
+                    </p>
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+                            <article class="team-member">
+                                <figure>
+                                    <img src="img/team-1.jpg" alt=""/>
+                                    <div class="hover p-4">
+                                        <p>
+                                            Hi ! I m Redwan from bangladesh.
+                                            I am a Professional graphic designer
+                                            & expert on print and UI/ UX .
+                                        </p>
+                                        <div>
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-linkedin"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h5><a href="#" class="text-uppercase">ibn hasan</a></h5>
+                                <p class="text-uppercase">CEO</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+                            <article class="team-member">
+                                <figure>
+                                    <img src="img/team-2.jpg" alt=""/>
+                                    <div class="hover p-4">
+                                        <p>
+                                            Hi ! I m Redwan from bangladesh.
+                                            I am a Professional graphic designer
+                                            & expert on print and UI/ UX .
+                                        </p>
+                                        <div>
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-linkedin"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h5><a href="#" class="text-uppercase">RAF REDWAN</a></h5>
+                                <p class="text-uppercase">TOFAIL AHMED</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+                            <article class="team-member">
+                                <figure>
+                                    <img src="img/team-3.jpg" alt=""/>
+                                    <div class="hover p-4">
+                                        <p>
+                                            Hi ! I m Redwan from bangladesh.
+                                            I am a Professional graphic designer
+                                            & expert on print and UI/ UX .
+                                        </p>
+                                        <div>
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-linkedin"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h5><a href="#" class="text-uppercase">BARI OWALAR MEYE</a></h5>
+                                <p class="text-uppercase">DEV</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+                            <article class="team-member">
+                                <figure>
+                                    <img src="img/team-4.jpg" alt=""/>
+                                    <div class="hover p-4">
+                                        <p>
+                                            Hi ! I m Redwan from bangladesh.
+                                            I am a Professional graphic designer
+                                            & expert on print and UI/ UX .
+                                        </p>
+                                        <div>
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-linkedin"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h5><a href="#" class="text-uppercase">TOFAIL AHMED</a></h5>
+                                <p class="text-uppercase">TOFAIL AHMED</p>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="subscribe py-5" id="blog" style="background-image: linear-gradient(to right, rgba(232,76,61,0.85), rgba(232,76,61,0.85)), url('img/newsletter.jpg')">
+                <div class="container">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-12 col-md-5">
+                            <article class="text-white">
+                                <h5 class="text-uppercase dash dash-white">SUBSCRIBE TO UPDATE</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <form method="post" action="" class="subscribe-form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="email" name="email" value="" class="form-control" placeholder="Enter email address" >
+                                        <div class="input-group-append">
+                                            <button class="btn  text-uppercase" type="submit" name="newsletter" value="send">subscribe</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="error-msg"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact py-5" id="contact">
+                <div class="container">
+                    <h4 class="text-center dash mb-4 text-uppercase">GET IN TOUCH WITH US</h4>
+                    <p class="mb-5 text-center">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                        been the industry's standard dummy text 
+                    </p>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <form class="contact-form" method="post" action="">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" value="" class="form-control" placeholder="Your name">
+                                            <div class="error-msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" value="" class="form-control" placeholder="Email Address">
+                                            <div class="error-msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                                            <div class="error-msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-danger px-5 text-uppercase">SUBMIT NOW</button>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+
+                        <div class="col-12 col-lg-5">
+                            <article>
+                                <p class="d-flex"> <span class="fa fa-map-marker fa-2x text-danger mr-2"></span> 65,Prothemers Tower-1200 D 
+                                    Block Comilla, Bangladesh
+                                </p>
+                                <p class="d-flex align-items-center"><span class="fa fa-envelope-o fa-2x text-danger mr-2"></span><a href="mailto:Info@Addaxx.com">Info@Addaxx.com</a></p>
+                                <p class="d-flex align-items-center"><span class="fa fa-phone text-danger fa-2x mr-2"></span>+8805-5823-582</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        
+        
+        <footer class="py-5 bg-danger">
+            <div class="container">
+                <p class="text-center text-white">
+                    Copyright Redwan . All Rights Reserved
+                </p>
+            </div>
+        </footer>
+
+
+
+
+
 
 
 
@@ -122,9 +455,20 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/popper.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/poper.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!--CUSTOM PAGE JS down-->
+
+        <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="js/counterup.js" type="text/javascript"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        
+
+        <!--theme js-->
+        <script src="js/main.js" type="text/javascript"></script>
+        
 
     </body>
 </html>
